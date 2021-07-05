@@ -85,10 +85,12 @@ header.header {
 .header__menu {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .bx-search-alt {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
+    font-size: var(--font-middle-size);
 }
 
 form {
@@ -98,8 +100,10 @@ form {
 }
 input {
     width: 100%;
-    border: none;
-    border-bottom: 1px solid black;
+    border: 1px solid lightgray;
+    padding-left: 0.5rem;
+    border-radius: .5rem 0 0 .5rem;
+    outline: none;
 }
 .header__search {
     display: flex;
@@ -120,7 +124,9 @@ input {
 .search_button {
     background-color: transparent;
     border: none;
-    margin-right: .5rem;
+    margin: 0 .5rem 0 0;
+    background-color: lightgray;
+    border-radius: 0 .5rem .5rem 0;
 }
 
 /* ===== Nav ===== */
@@ -431,6 +437,7 @@ i {
     .cooper__container,
     .company__container {
         padding: 0 1rem;
+        text-align: center;
     }
     
     .cate__img,
@@ -493,15 +500,24 @@ i {
         font-size: var(--font-semi-size);
         padding: 1rem 2rem;
     }
-    .cate__img {
+    .cate__img,
+    .etc__img {
         margin-right: 0;
         margin-bottom: 0.5rem;
     }
-    .cate__box {
+    .cate__box,
+    .etc__box a {
         flex-direction: column;
         text-align: center;
     }
-    .cate__sub {
+
+    .etc__box a {
+        display: flex;
+        align-items: center;
+    }
+
+    .cate__sub,
+    .etc__sub_sub {
         display: none;
     }
     .cooper__container {
@@ -527,5 +543,15 @@ i {
 
     .footer__copyriht {
         flex-direction: column;
+    }
+
+    form {
+        height: 30px;
+    }
+    input {
+        font-size: var(--font-semi-size)    ;
+    }
+    .bx-search-alt {
+        font-size: var(--font-semi-size);
     }
 }
