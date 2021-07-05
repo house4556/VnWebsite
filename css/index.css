@@ -85,7 +85,7 @@ header.header {
 .header__menu {
     display: flex;
     align-items: center;
-}`
+}
 
 .bx-search-alt {
     padding: 0.5rem 1rem;
@@ -115,6 +115,12 @@ input {
     border: none;
     color: white;
     border-radius: 1rem;
+}
+
+.search_button {
+    background-color: transparent;
+    border: none;
+    margin-right: .5rem;
 }
 
 /* ===== Nav ===== */
@@ -454,10 +460,24 @@ i {
         padding: .5rem;
     }
     .header__logo {
-        font-size: var(--font-nomarl-size);
+        font-size: var(--font-semi-size);
+    }
+    .header__logo a {
+        display: flex;
+        align-items: center;
     }
     .header__menu {
         font-size: var(--font-semi-size);
+    }
+    .header__login {
+        padding: .5rem 1rem;
+        font-size: var(--font-semi-size);
+    }
+    .bxs-user-detail {
+        font-size: var(--font-semi-size);
+    }
+    input {
+        width: 120px;
     }
     nav.nav {
         height: 400px;
